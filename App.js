@@ -9,6 +9,7 @@ import {
   PermissionsAndroid,
 } from 'react-native';
 import {WebView} from 'react-native-webview';
+import Orientation from 'react-native-orientation-locker';
 
 const deviceHeight = Dimensions.get('window').height;
 const deviceWidth = Dimensions.get('window').width;
@@ -66,6 +67,7 @@ const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   useEffect(() => {
+    Orientation.lockToPortrait();
     this.requestLocationPermission();
     BackHandler.addEventListener('hardwareBackPress', onAndroidBackPress);
     if (this.checkLocPermission()) {
