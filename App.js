@@ -19,8 +19,8 @@ requestLocationPermission = async () => {
     await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
       {
-        title: 'SIMPLYTRACK Location Permission',
-        message: 'SIMPLYTRACK needs access to your Location ',
+        title: 'VOIS Location Permission',
+        message: 'VOIS needs access to your Location ',
         buttonNeutral: 'Ask Me Later',
         buttonNegative: 'Cancel',
         buttonPositive: 'OK',
