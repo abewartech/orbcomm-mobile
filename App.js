@@ -93,18 +93,17 @@ const App = () => {
         <WebView
           source={{uri: 'https://orbcomm.monitormyvessel.com'}}
           style={styles.video}
-          mediaPlaybackRequiresUserAction={false}
-          domStorageEnabled={true}
-          ref={webView}
-          allowsInlineMediaPlayback
-          useWebKit
+          // mediaPlaybackRequiresUserAction={false}
+          // domStorageEnabled={true}
+          // ref={webView}
+          // allowsInlineMediaPlayback
+          // useWebKit
           javaScriptEnabled
           javaScriptEnabledAndroid
-          startInLoadingState
-          originWhitelist={['*']}
-          cacheEnabled={false}
-          cacheMode={'LOAD_NO_CACHE'}
-          incognito={true}
+          // startInLoadingState
+          // originWhitelist={['*']}
+          // cacheEnabled={false}
+          // cacheMode={'LOAD_NO_CACHE'}
         />
       </View>
     </>
