@@ -74,6 +74,7 @@ const App = () => {
     } else {
       alert('Silahkan aktifkan lokasi anda');
     }
+    setTimeout(() => Orientation.lockToPortrait(), 1000);
     return () => {
       BackHandler.removeEventListener('hardwareBackPress', onAndroidBackPress);
       clearInterval(this._interval);
